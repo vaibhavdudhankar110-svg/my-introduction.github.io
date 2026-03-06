@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Introduction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+scroll-behavior:smooth;
+}
+
+body{
+background:#000000;
+color:white;
+}
+
+/* Glass Effect */
+
+.page{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-align:center;
+padding:40px;
+}
+
+.glass{
+background:rgba(14, 20, 214, 0.08);
+backdrop-filter:blur(15px);
+border-radius:20px;
+padding:40px;
+width:85%;
+max-width:700px;
+border:1px solid rgba(255,255,255,0.2);
+box-shadow:0 0 25px rgba(255,255,255,0.1);
+animation:fade 1.5s;
+}
+
+@keyframes fade{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+h1{
+margin-bottom:15px;
+font-size:35px;
+}
+
+p{
+font-size:18px;
+line-height:1.6;
+}
+
+/* Navigation Buttons */
+
+.nav{
+margin-top:25px;
+}
+
+button{
+padding:10px 25px;
+margin:10px;
+border:none;
+border-radius:20px;
+background:white;
+color:black;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+/* Floating Stickers */
+
+.sticker{
+position:fixed;
+font-size:30px;
+animation:float 6s infinite linear;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-100vh);}
+}
+
+.s1{left:10%;}
+.s2{left:30%; animation-delay:2s;}
+.s3{left:50%; animation-delay:4s;}
+.s4{left:70%; animation-delay:1s;}
+.s5{left:90%; animation-delay:3s;}
+
+</style>
+</head>
+
+<body>
+
+<!-- Stickers -->
+
+<div class="sticker s1">✨</div>
+<div class="sticker s2">🚀</div>
+<div class="sticker s3">💻</div>
+<div class="sticker s4">⭐</div>
+<div class="sticker s5">🔥</div>
+
+<!-- PAGE 1 -->
+
+<section class="page" id="p1">
+<div class="glass">
+<h1>Hello 👋</h1>
+<p>Welcome to my introduction website.</p>
+<div class="nav">
+<a href="#p2"><button>Next</button></a>
+</div>
+</div>
+</section>
+
+<!-- PAGE 2 -->
+
+<section class="page" id="p2">
+<div class="glass">
+<h1>My Name</h1>
+<p>My name is <b>Vaibhav</b>.</p>
+<div class="nav">
+<a href="#p1"><button>Back</button></a>
+<a href="#p3"><button>Next</button></a>
+</div>
+</div>
+</section>
+
+<!-- PAGE 3 -->
+
+<section class="page" id="p3">
+<div class="glass">
+<h1>Education</h1>
+<p>I am currently studying BCA.</p>
+<div class="nav">
+<a href="#p2"><button>Back</button></a>
+<a href="#p4"><button>Next</button></a>
+</div>
+</div>
+</section>
+
+<!-- PAGE 4 -->
+
+<section class="page" id="p4">
+<div class="glass">
+<h1>About Me</h1>
+<p>I am passionate about technology and programming.</p>
+<div class="nav">
+<a href="#p3"><button>Back</button></a>
+<a href="#p5"><button>Next</button></a>
+</div>
+</div>
+</section>
+
+<!-- PAGE 5 -->
+
+<section class="page" id="p5">
+<div class="glass">
+<h1>Skills</h1>
+<p>HTML, CSS, Programming Basics.</p>
+<div class="nav">
+<a href="#p4"><button>Back</button></a>
+<a href="#p6"><button>Next</button></a>
+</div>
+</div>
+</section>
+
+<!-- PAGE 6 -->
+
+<section class="page" id="p6">
+<div class="glass">
+<h1>Interest</h1>
+<p>I like learning web development and creating websites.</p>
+<div class="nav">
+<a href="#p5"><button>Back</button></a>
+<a href="#p7"><button>Next</button></a>
+</div>
+</div>
+</section>
+
+<!-- PAGE 7 -->
+
+<section class="page" id="p7">
+<div class="glass">
+<h1>My Goal</h1>
+<p>My goal is to become a professional developer.</p>
+<div class="nav">
+<a href="#p6"><button>Back</button></a>
+<a href="#p8"><button>Next</button></a>
+</div>
+</div>
+</section>
+
+<!-- PAGE 8 -->
+
+<section class="page" id="p8">
+<div class="glass">
+<h1>Hobbies</h1>
+<p>Coding, learning technology and exploring new things.</p>
+<div class="nav">
+<a href="#p7"><button>Back</button></a>
+<a href="#p9"><button>Next</button></a>
+</div>
+</div>
+</section>
+
+<!-- PAGE 9 -->
+
+<section class="page" id="p9">
+<div class="glass">
+<h1>My Passion</h1>
+<p>I enjoy building creative websites and animations.</p>
+<div class="nav">
+<a href="#p8"><button>Back</button></a>
+<a href="#p10"><button>Next</button></a>
+</div>
+</div>
+</section>
+
+<!-- PAGE 10 -->
+
+<section class="page" id="p10">
+<div class="glass">
+<h1>Future Plan</h1>
+<p>I want to work in the IT industry.</p>
+<div class="nav">
+<a href="#p9"><button>Back</button></a>
+<a href="#p11"><button>Next</button></a>
+</div>
+</div>
+</section>
+
+<!-- PAGE 11 -->
+
+<section class="page" id="p11">
+<div class="glass">
+<h1>Thank You</h1>
+<p>Thank you for visiting my introduction website.</p>
+<div class="nav">
+<a href="#p10"><button>Back</button></a>
+<a href="#p12"><button>Next</button></a>
+</div>
+</div>
+</section>
+
+<!-- PAGE 12 -->
+
+<section class="page" id="p12">
+<div class="glass">
+<h1>Contact</h1>
+<p>You can connect with me anytime.</p>
+<div class="nav">
+<a href="#p1"><button>Start Again</button></a>
+</div>
+</div>
+</section>
+
+</body>
+</html>
+	
+	
